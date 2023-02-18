@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <form name="myForm" action="" onsubmit="vForm()">
+      <fieldset class="border p-1">
+        <legend class="w-auto">Form Application:</legend>
+        <div class="name">
+          <input
+            class="form-control"
+            type="text"
+            value="First name"
+            id="firstName"
+            style="width: 325px"
+          />
+          <input
+            class="form-control"
+            type="text"
+            value="Last name"
+            id="lastName"
+            style="width: 325px"
+            disabled
+          />
+        </div>
+
+        <div class="name">
+          <input
+            class="form-control w-75"
+            type="password"
+            value="Password"
+            id="pass"
+          />
+          <button type="button" class="btn btn-secondary" id="passButton">
+            Show
+          </button>
+          <span id="passSpan" style="color: red"></span>
+        </div>
+
+        <div class="name">
+          <input
+            class="form-control w-100"
+            type="text"
+            value="Email"
+            name="email"
+            id="mail"
+          />
+        </div>
+
+        <div class="name">
+          <input
+            class="form-control"
+            type="number"
+            value="Age"
+            style="width: 325px"
+            id="age"
+          />
+
+          <select class="custom-select" style="width: 325px">
+            <option selected>Egypt</option>
+            <option value="1">China</option>
+            <option value="2">America</option>
+            <option value="3">France</option>
+          </select>
+        </div>
+        <div class="name">
+          <button type="button" class="btn btn-secondary" style="width: 350px">
+            Upload Your CV
+          </button>
+          <input
+            type="file"
+            class="form-control-file"
+            class="btn btn-outline-secondary"
+            style="width: 325px"
+            id="file"
+            onchange="return fileValidation()"
+          />
+        </div>
+        <div class="name">
+          <textarea class="form-control" rows="3" id="textArea">
+Your message</textarea
+          >
+        </div>
+        <div class="name">
+          <button type="reset" class="btn btn-secondary" style="width: 325px">
+            Reset
+          </button>
+
+          <input
+            type="submit"
+            value="Submit"
+            class="btn btn-secondary"
+            style="width: 325px"
+          />
+        </div>
+      </fieldset>
+    </form>
+
+    <script src="../js/js.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/jquery-3.6.2.min.js"></script>
+  </body>
+</html>
